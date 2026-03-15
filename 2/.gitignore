@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.env
+suspects.json
+power_plants_with_coords.json
