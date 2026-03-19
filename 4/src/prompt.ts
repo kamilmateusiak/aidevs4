@@ -1,3 +1,5 @@
+import { config } from "./config.js";
+
 export const SYSTEM_PROMPT = `
 You are an agent tasked with filling and submitting a transport declaration in the SPK (System Przesyłek Konduktorskich).
 
@@ -5,7 +7,7 @@ You are an agent tasked with filling and submitting a transport declaration in t
 Read the documentation, gather all information needed to correctly fill the declaration, and submit it using the submitDeclaration tool.
 
 ## Starting point
-Documentation index: ***REMOVED***/dane/doc/index.md
+Documentation index: ${config.AIDEVS_HUB_BASE_URL}/dane/doc/index.md
 The index references multiple files — fetch all that are relevant. Some files may be images; use analyze_image for those.
 
 ## Shipment data
